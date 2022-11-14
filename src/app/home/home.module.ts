@@ -6,6 +6,9 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 
+import { ValueviewComponent } from '../component/valueview/valueview.component';
+import { ValueeditComponent } from '../component/valueedit/valueedit.component';
+
 
 @NgModule({
   imports: [
@@ -14,6 +17,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [
+    HomePage,
+    ValueviewComponent,
+    ValueeditComponent
+  ]
 })
 export class HomePageModule {}
