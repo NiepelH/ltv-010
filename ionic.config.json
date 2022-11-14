@@ -1,0 +1,7 @@
+{
+  "name": "ltv-010",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
