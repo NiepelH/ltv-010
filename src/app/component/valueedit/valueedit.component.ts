@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ValueService } from 'src/app/service/value.service';
 
 @Component({
   selector: 'app-valueedit',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValueeditComponent implements OnInit {
 
-  constructor() { }
+  constructor(private valueService: ValueService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    
+  }
+
+  updateValueOne(event: any) {
+    this.valueService.valueOne = event.target.value;
+  }
 
 }

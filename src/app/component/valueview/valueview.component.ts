@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ValueService } from 'src/app/service/value.service';
 
 @Component({
   selector: 'app-valueview',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ValueviewComponent implements OnInit {
 
-  constructor() { }
+  constructor(private valueService: ValueService) { }
 
   ngOnInit() {}
 
