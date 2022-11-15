@@ -9,6 +9,16 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { ValueService } from './service/value.service';
 
+import { IMqttServiceOptions, MqttModule } from 'ngx-mqtt';
+
+
+const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
+  hostname: "localhost",
+  port: 1883,
+  protocol: "wss",
+  path: '',
+};
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -16,7 +26,8 @@ import { ValueService } from './service/value.service';
     IonicModule.forRoot(), 
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MqttModule.forRoot(MQTT_SERVICE_OPTIONS)
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy}, 

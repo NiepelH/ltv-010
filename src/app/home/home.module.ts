@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 
 import { ValueviewComponent } from '../component/valueview/valueview.component';
 import { ValueeditComponent } from '../component/valueedit/valueedit.component';
+import { EventStreamComponent } from '../component/event-stream/event-stream.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ValueeditComponent } from '../component/valueedit/valueedit.component';
   declarations: [
     HomePage,
     ValueviewComponent,
-    ValueeditComponent
+    ValueeditComponent,
+    EventStreamComponent
   ]
 })
 export class HomePageModule {}
